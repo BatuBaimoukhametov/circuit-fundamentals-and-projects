@@ -18,7 +18,7 @@ Circuit simulations built in LTspice while working through Tony Kuphaldt's *All 
 | Parallel LC tank              | `AC_LC_parallel.asc`            | 100 mH ‖ 10 µF with near-zero series R, linear frequency sweep        |
 | Parallel tank (duplicate)     | `Tank_circuit.asc`              | Same 100 mH ‖ 10 µF tank under identical AC analysis                  |
 | Series LC resonance           | `AC_LC_series.asc`              | 100 mH + 10 µF driven at its calculated resonant frequency            |
-| Inductor transient            | `Draft2.asc`                    | 2 H inductor + 0.1 Ω with UIC and forced initial conditions           |
+| Inductor transient            | `Inductor_Transient.asc`        | 2 H inductor + 0.1 Ω with UIC and forced initial conditions           |
 | Basic analog sources          | `Analog_test.asc`               | Pulse, dual-phase sines and pure DC sources into resistive loads      |
 | Capacitor transient           | `Analog_capacitor.asc`          | Large capacitor + series resistor under 1 Hz sine                     |
 | Inductor phase lag            | `Analog_inductor.asc`           | 2 H inductor with explicit .meas statements for phase difference      |
