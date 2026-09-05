@@ -2,18 +2,25 @@
 A simulated end-to-end AM radio system built in LTspice, using a real audio clip as the input signal. From modulation through demodulation, an audible approximation of the original recording is recovered at an appropriate level to demonstrate the concept. 
 
 ## Signal Chain
+
 **1. Audio source**
 A downsized  8kHz version of the 2MB .wav file from (https://file-examples.com/index.php/sample-audio-files/sample-wav-download/) is fed into LTspice's `wavefile=` voltage source parameter, standing in for a microphone signal.
+
 **2. Carrier**
 A 50kHz `SINE` source represents the radio frequency the signal would be broadcast on (scaled down for manageable simulation size)
+
 **3. Modulation**
 A behavioural voltage source computes `V=(V(audio)+2)*V(carrier)`. The `+2` offset keeps the original audio signal positive for simple diode-based demodulation later. 
+
 **4. Bandpass filter**
 A series RLC network (R=100ohms, L=10mH, C=1nF) resonating at 50kHz simulates a receiver's tuning stage from a in practice noisier RF environment.
+
 **5. Envelope detector**
 A diode (1N4148) followed by the RC network (R=1kohm, C=47nF) rectifies the signal and smooths out the carrier ripple using its ~47us time constant. 
+
 **6. DC blocking**
 A high-pass filter (C=1uF, R=10kohm, corner ~16Hz) strops the DC offset left from the initial +2 shift and the diode's forward voltage drop. 
+
 ## Results
 The recovered audio's envelope closely tracks the original clip's loud/quite pattern as verified by the bursts and pauses lining up when the two signals are plotted together. However, the recovered signal has a noticeably smaller amplitude and is audibly noisier than the original. Three causes of this specific to this circuit include:
 -Incomplete carrier suppression
