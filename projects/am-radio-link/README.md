@@ -35,8 +35,8 @@ The recovered audio's envelope closely tracks the original clip's loud/quite pat
 
 | Screenshot | Shows |
 |---|---|
-| [Screenshot_2026-05-05_163435.png](Screenshot_2026-09-05_163435.png) | Zoomed-in view (2ms window) of the modulated signal, confirming the ~50kHz carrier oscillation underneath the audio envelope |
-| [Screenshot_2026-05-05_164643.png](Screenshot_2026-09-05_164643.png) | AC sweep of the bandpass filter, confirming resonant peak at ~50kHz |
-| [Screenshot_2026-05-6_165353.png](Screenshot_2026-09-05_165353.png) | Filtered signal overlaid on the original modulated signal, confirming the bandpass stage passes it through intact |
-| [Screenshot_2026-05-07_170134.png](Screenshot_2026-09-05_170134.png) | Envelope detector output vs. original audio, showing the recovered envelope tracking the source's loud/quiet pattern |
-| [Screenshot_2026-09-05_170847.png](Screenshot_2026-09-05_170847.png) | Final recovered audio (after DC blocking) vs. original audio, the main before/after comparison |
+| [Screenshot_2026-05-05_163435.png] | Zoomed-in view (2ms window) of the modulated signal, confirming the ~50kHz carrier oscillation underneath the audio envelope |
+| [Screenshot_2026-05-05_164643.png] | AC sweep of the bandpass filter, confirming resonant peak at ~50kHz |
+| [Screenshot_2026-05-6_165353.png] | Filtered signal overlaid on the original modulated signal, confirming the bandpass stage passes it through intact |
+| [Screenshot_2026-05-07_170134.png] | Envelope detector output vs. original audio, showing the recovered envelope tracking the source's loud/quiet pattern |
+| [Screenshot_2026-09-05_170847.png] | Final recovered audio (after DC blocking) vs. original audio, the main before/after comparison |
