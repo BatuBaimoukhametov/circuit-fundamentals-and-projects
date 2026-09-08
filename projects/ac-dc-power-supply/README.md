@@ -4,10 +4,13 @@ The end DC's ripple voltage is measured and compared to the theoretical.
 ## Signal Chain
 **1. AC source + transformer**
 A `SINE(0 170 60)` source represents 120V RMS wall power at 60Hz. Two coupled inductors (K=1) step this down to a lower secondary voltage, simulating a step-down transformer.
+
 **2. Full-wave bridge rectifier**
 Four 1N4007 diodes arranged in a bridge configuration convert the AC secondary voltage into a pulsing DC output, (full-wave rectification), this doubles the ripple frequency to 120Hz compared to a half-wave design.
+
 **3. Filter capacitor**
 The 1000uF capacitor placed across the rectified output smooths the pulsing DC into steadier voltage.
+
 ## Results
 Measured ripple voltage (via cursor readout across one steady-state cycle): ~1.03V
 Theoretical ripple, calculated using Vripple ≈ Iload / (f x C):
