@@ -1,6 +1,6 @@
 # Foundations: All About Circuits Vol. 1 & 2
 
-Circuit simulations built in LTspice while working through Tony Kuphaldt's *All About Circuits*, Volumes 1 (DC) and 2 (AC). These aren't standalone projects, they're the fundamentals I used to build intuition before extending into the applied projects in `/projects`.
+Circuit simulations built in LTspice while working through Tony Kuphaldt's *All About Circuits*, Volumes 1 (DC) and 2 (AC). These aren't standalone projects, they're simulations I used to test and grasp concepts from the textbook and which I later implement in bigger simulations in `/projects`.
 
 | Topic                         | File                            | Notes                                                                 |
 | ----------------------------- | ------------------------------- | --------------------------------------------------------------------- |
